@@ -43,15 +43,16 @@ class Config():
             os.makedirs(new_dir)
             cls.data_dir[name] = new_dir
             print("new dataset dictionary is created.")
-    
+
     @classmethod
     def get_data_path(cls, name):
         return os.path.join(cls._data_root_dir, cls.data_dir[name])
+
+
     
     
-    
-    
-            
+
+
 
 
 
