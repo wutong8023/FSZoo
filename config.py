@@ -9,13 +9,12 @@ import os
 import json
 
 class Config():
-    # absolute path
-    _data_root_dir = "/Users/parasol_tree/Resource/019 - Github/FSZoo/datasets"
-
-
-    data_dir = {
-        "semeval": "data_filtered/supervisedRE/semeval"
-    }
+    def __init__(self):
+        # absolute path
+        _data_root_dir = "/Users/parasol_tree/Resource/019 - Github/FSZoo/datasets"
+        data_dir = {
+            "semeval": "data_filtered/supervisedRE/semeval"
+        }
 
 
     @classmethod
